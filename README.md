@@ -4,7 +4,7 @@ This serves as an online portfolio for all of Carisse Lugo's Computer Science 3 
 Thank you!
 
 Includes :
- > Chinese Zodiac Sign (2.6.2)
- > Code Tracing Exercise (2.6.4)
+> Chinese Zodiac Sign (2.6.2)
+> Code Tracing Exercise (2.6.4)
 
 With love, Carisse 9-Beryllium
