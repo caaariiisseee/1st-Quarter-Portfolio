@@ -1,0 +1,70 @@
+# Computer Science 3
+
+# Code 1
+def greet_students(name, nChar):
+    for i in range(nChar):
+        print(name[i])
+
+name = input("Enter a Name : ")
+nChar = input("Enter any numeric number : ")
+nChar = int(nChar)
+greet_students(name, nChar)
+
+# a. If the name is "Joseph the Dreamer" and the nChar is 5, it will output : J o s e p (in different lines), because it will print the first 5 characters of the name.
+# b. Using the same name but nChar is 20, it will print all characters but will encounter an error message "IndexError: string index out of range".
+# c. To fix the error, we can add a condition statement to check whether the inputed nChar is greater than the number of characters in the name. If it is, we can set the nChar into the length of the name to avoid the index error.
+
+# Code 1 : Modified
+def greet_students(name, nChar):
+    if nChar > len(name):
+        nChar = len(name)
+    for i in range(nChar):
+        print(name[i])
+
+name = input("Enter a Name : ")
+nChar = input("Enter any numeric number : ")
+nChar = int(nChar)
+greet_students(name, nChar)
+
+# Code 2
+def greet_students(name, nChar):
+    for i in range(nChar):
+        print(name[0: nChar])
+
+name = input("Enter a Name : ")
+greet_students(name, len(name))
+
+# a. The syntex error in the code is that the program will print the name n-times with n eing the length of the name. To fix this, I added a - i to be able to remove those characters to form an inverted triangle.
+# b. Below is the fixed code.
+
+# Code 2 : Fixed
+def greet_students(name, nChar):
+    for i in range(nChar):
+        print(name[0: (nChar - i)])
+
+name = input("Enter a Name : ")
+greet_students(name, len(name))
+
+# Code 3 
+n = 0 
+while n < 1 or n > 100:
+    n = input("Enter a Number from 1 to 100 : ")
+    n = int(n)
+
+print("Sum of all squared numbers is", sum_of_squared(n))
+
+# a. Here is the added function to calculate the sum of all squared values.
+
+# Code 3 : Added
+def sum_of_squared(n):
+    sum = 0
+    for i in range(1, n + 1):
+        sum += i ** 2
+    return sum
+
+n = 0 
+while n < 1 or n > 100:
+    n = input("Enter a Number from 1 to 100 : ")
+    n = int(n)
+
+print("Sum of all squared numbers is", sum_of_squared(n))
