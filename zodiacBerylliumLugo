@@ -1,0 +1,84 @@
+#6.2 ComSci
+#9-Beryllium Carisse Lugo
+
+def rat(year):
+    if year % 12 == 4:
+        return "Rat (鼠 / Shǔ)"
+    else:
+        return None
+
+def ox(year):
+    if year % 12 == 5:
+        return "Ox (牛 / Niú)"
+    else:
+        return None
+
+def tiger(year):
+    if year % 12 == 6:
+        return "Tiger (虎 / Hǔ)"
+    else:
+        return None
+
+def rabbit(year):
+    if year % 12 == 7:
+        return "Rabbit (兔 / Tù)"
+    else:
+        return None
+
+def dragon(year):
+    if year % 12 == 8:
+        return "Dragon (龙 / Lóng)"
+    else:
+        return None
+
+def snake(year):
+    if year % 12 == 9:
+        return "Snake (蛇 / Shé)"
+    else:
+        return None
+
+def horse(year):
+    if year % 12 == 10:
+        return "Horse (马 / Mǎ)"
+    else:
+        return None 
+
+def goat(year):
+    if year % 12 == 11:
+        return "Goat (羊 / Yáng)"
+    else:
+        return None
+
+def monkey(year):
+    if year % 12 == 0:
+        return "Monkey (猴 / Hóu)"
+    else:
+        return None 
+
+def rooster(year):
+    if year % 12 == 1:
+        return "Rooster (鸡 / Jī)"
+    else:
+        return None
+
+def dog(year): 
+    if year % 12 == 2:
+        return "Dog (狗 / Gǒu)"
+    else:
+        return None
+
+def pig(year):
+    if year % 12 == 3:
+        return "Pig (猪 / Zhū)"
+    else:
+        return None     
+    
+def main():
+    year = int(input("Hello! Please enter your birth year: "))
+    if year < 1900:
+        print("\nInvalid Year, it should not be earlier than 1900")
+
+    else:
+        print(f"\nYour Chinese Zodiac sign is : {rat(year) or ox(year) or tiger(year) or rabbit(year) or dragon(year) or snake(year) or horse(year) or goat(year) or monkey(year) or rooster(year) or dog(year) or pig(year)}")
+
+main()
