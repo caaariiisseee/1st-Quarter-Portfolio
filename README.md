@@ -1,4 +1,4 @@
-# Repository 1q
+# 1st Quarter Portfolio
 
 This serves as an online portfolio for all of Carisse Lugo's Computer Science 3 ILAs and Activities during the first quarter.
 Thank you!
