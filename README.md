@@ -6,5 +6,7 @@ Thank you!
 Includes :
 Chinese Zodiac Sign (2.6.2)
 Code Tracing Exercise (2.6.4)
+The RPG Hero (5.3.2)
+Code-to-Diagram Challenge (5.3.3)
 
 With love, Carisse 9-Beryllium
