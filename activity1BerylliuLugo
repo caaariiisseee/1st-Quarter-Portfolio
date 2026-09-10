@@ -1,4 +1,5 @@
-#activity 1
+#SG 5 activity 1 ComSci
+#9-Beryllium Carisse Lugo
 
 class Hero:
   def __init__(self, name, health, attack):
