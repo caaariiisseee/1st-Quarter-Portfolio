@@ -1,0 +1,26 @@
+#activity 1
+
+class Hero:
+  def __init__(self, name, health, attack):
+    self.name = name
+    self.health = health
+    self.attack = attack
+
+  def take_damage(self, amount):
+    self.health -= amount
+    if self.health < 0:
+      self.health = 0
+
+  def attack(self, amount):
+    return self.attack
+
+
+arthur = Hero("Arthur", 100, 15)
+morgana = Hero("Morgana", 100, 10)
+
+arthur.take_damage(morgana.attack)
+
+print(f"Morgana deals a {morgana.attack} damage to Arthur.")
+print(f"Arthur's health after taking damage from Morgana: {arthur.health}")
+print(f"Morgana's health: {morgana.health}")
+
